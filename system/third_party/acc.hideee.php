@@ -4,14 +4,14 @@
 /**
 * Hideee, Hide some stuff!
 *
-* @package			Hideee
-* @version			1.0.0
-* @author			Cem Meric <http://webunder.com.au> - Managing Director, Webunder
-* @copyright 		Copyright (c) 2002-2010 Webunder <http://http://webunder.com.au>
-* @license 			Attribution-ShareAlike 3.0 Unported <http://creativecommons.org/licenses/by-sa/3.0>
-* @subpackage		Accessories
-* @category			Accessories
-* @purpose			Hide some stuff!
+* @package		Hideee
+* @version		1.0.0
+* @author		Cem Meric <http://webunder.com.au> - Managing Director, Webunder
+* @copyright	Copyright (c) 2002-2010 Webunder <http://http://webunder.com.au>
+* @license		Attribution-ShareAlike 3.0 Unported <http://creativecommons.org/licenses/by-sa/3.0>
+* @subpackage	Accessories
+* @category		Accessories
+* @purpose		Hide some stuff!
 */
 
 
