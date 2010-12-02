@@ -46,6 +46,7 @@ class Hideee_acc
 			
 		$str = <<<END
 		 $("#search").remove();
+         $("#accessoryTabs").find("a.hideee").parent("li").remove();
 END;
 
 		$this->EE->javascript->output($str);
