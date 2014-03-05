@@ -4,52 +4,52 @@
 /**
 * Hideee, Hide some stuff!
 *
-* @package		Hideee
-* @version		1.0.1
-* @author		Cem Meric <http://webunder.com.au> - Managing Director, Webunder
-* @copyright	Copyright (c) 2002-2010 Webunder <http://http://webunder.com.au>
-* @license		Attribution-ShareAlike 3.0 Unported <http://creativecommons.org/licenses/by-sa/3.0>
-* @subpackage	Accessories
-* @category		Accessories
-* @purpose		Hide some stuff!
+* @package      Hideee
+* @version      1.0.0
+* @author       Cem Meric <http://webunder.com.au> - Managing Director, Webunder
+* @copyright    Copyright (c) 2002-2014 Webunder <http://http://webunder.com.au>
+* @license      Attribution-ShareAlike 3.0 Unported <http://creativecommons.org/licenses/by-sa/3.0>
+* @subpackage   Accessories
+* @category     Accessories
+* @purpose      Hide some stuff!
 */
 
 
 class Hideee_acc
 {
-	var $name			= 'Hideee';
-	var $id	 			= 'hideee';
-	var $version		= '1.0.0';
-	var $description	= 'Hide some stuff!';
-	var $sections		= array();
+    var $name           = 'Hideee';
+    var $id             = 'hideee';
+    var $version        = '1.0.0';
+    var $description    = 'Hide some stuff!';
+    var $sections       = array();
 
 
-	/**
-	* Set Sections
-	*
-	* Hiding Seach div in Control Panel
-	* 
-	*/
-		 
-	function set_sections()
-	{
-		$EE =& get_instance();
-		
-		$this->EE =& get_instance();
-		
-		$this->EE->load->library('javascript');
+    /**
+    * Set Sections
+    *
+    * Hiding Seach div in Control Panel
+    *
+    */
 
-		/**
-		* Hide some stuff
-		*
-		*/
-			
-		$str = <<<END
-		 $("#search").remove();
-         $("#accessoryTabs").find("a.hideee").parent("li").remove();
+    function set_sections()
+    {
+        $EE =& get_instance();
+
+        $this->EE =& get_instance();
+
+        $this->EE->load->library('javascript');
+
+        /**
+        * Hide some stuff
+        *
+        */
+
+        $str = <<<END
+        $("#search").remove();
+        $("#accessoryTabs").find("a.hideee").parent("li").remove();
 END;
 
-		$this->EE->javascript->output($str);
-	}
+        $this->EE->javascript->output($str);
+    }
 }
-/* Location: ./system/expressionengine/third_party/hideee/acc.hideee.php */ 
+/* Location: ./system/expressionengine/third_party/hideee/acc.hideee.php */
